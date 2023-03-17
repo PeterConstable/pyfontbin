@@ -34,7 +34,7 @@ encodings = (
 
                 # Windows encodings:
                 (   "Symbol", "Unicode BMP (UCS-2)", "ShiftJIS", "PRC", "Big 5",
-                    "Wansung", "Johab", "Reserved", "Reserved", "Unicode UCS-4"
+                    "Wansung", "Johab", "Reserved", "Reserved", "Reserved", "Unicode UCS-4"
                 )
             )
              
