@@ -1,6 +1,5 @@
-# write a scripts that gets a font file name from the command line and prints the cmap encoding records
+# a script that gets a font file name from the command line and prints the cmap encoding records
 from fontTools.ttLib import TTFont
-from fontTools.ttLib import TTCollection
 import sys
 
 f=TTFont(sys.argv[1])
