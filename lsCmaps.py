@@ -41,13 +41,14 @@ encodings = (
 print("\ncmap subtables:\n")
 
 for cmap in cmaps:
-    if cmap[0] < 4:
+    c = f"{cmap[0]}/{cmap[1]}/{cmap[2]}"
+    if cmap[0] < len(platforms):
         p = platforms[cmap[0]]
         if cmap[1] < len(encodings[cmap[0]]):
             e = encodings[cmap[0]][cmap[1]]
         else:
             e = "unknown encoding"
-        print(f"{cmap[0]}/{cmap[1]}/{cmap[2]} ({p}, {e}, format {cmap[2]})")
+        print(f"{c} ({p}, {e}, format {cmap[2]})")
     else:
-        print(cmap)
+        print(f"{c} (unknown platform & encoding, format {cmap[2]})")
         
