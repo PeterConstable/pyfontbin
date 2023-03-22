@@ -4,7 +4,10 @@ import sys
 from pathlib import Path
 
 def getFontVersion(font):
-    return font['name'].getDebugName(5)
+    version = font['name'].getDebugName(5)
+    if version == None:
+        version = font['head'].fontRevision
+    return version
 
 def getFontsFromPath(fontPath):
     # returns list of tuples (fontPath, font)
